@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arunachalam M (2020115013)">
+    <title>Calculator</title>
+    <style>
+        *{
+            background-color: black;
+            color:white;
+        }
+        body{
+            margin-top:200px;
+            margin-left:550px;
+            
+        }
+        .ans{
+            width: 298px;
+            height:40px;
+            margin-bottom:30px;
+            border: 3px solid white;
+        }
+        .toflex{
+            display: flex;
+            margin: auto;
+        }
+        button{
+            background-color: rgba(43, 28, 28, 0.521);
+            color:white;
+            border-radius: 100px;
+            line-height: 20px;
+            border: 1px solid grey;
+            cursor: pointer;
+            width: 53px;
+            height:40px;
+            text-align: center;
+            margin-right: 10px;
+            margin-bottom:10px;
+        }
+        button:hover{
+            background-color:red;
+        }
+        #loge:hover{
+            background-color:red;
+        }
+        #del{
+            background-color: grey;
+        }
+        #clear{
+            background-color: grey;
+        }
+        #equal{
+            width:305px;
+        }
+        sub{
+            background-color: rgba(43, 28, 28, 0.521);
+        }
+        
+        #loge:hover sub{
+            background-color: red;
+        }
+        .sym{
+            background-color: orange;
+            font-size:13px;
+            font-weight: bolder;
+        }
+        button:hover .sym{
+            background-color: red;
+        }
+        #equal{
+            font-size: 30px;
+        }
+        main{
+            background-color: black;
+            margin-right: 528px;
+            
+        }
+        h1{
+            margin-bottom:150px;
+            margin-top:-150px;
+        }
+        h3{
+            margin-bottom:150px;
+            margin-top:-150px;
+            margin-left:300px;
+        }
+    </style>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1>CALCULATOR 2.0</h1>
+    <h3>-Done by Arunachalam</h3>
+
+    <main>
+    <input type="text" class="ans" id="result">
+    <div class="toflex">
+        <button onclick="display(7)">7</button>
+        <button onclick="display(8)">8</button>
+        <button onclick="display(9)">9</button>
+        <button onclick="del()" id="del">DEL</button>
+        <button onclick="clearfull()" id="clear">Clear</button>
+    </div>
+    <div class="toflex">
+        <button onclick="display(4)">4</button>
+        <button onclick="display(5)">5</button>
+        <button onclick="display(6)">6</button>
+        <button onclick="multiply()" class="mul sym">X</button>
+        <button onclick="divide()"  class="div sym">/</button>
+    </div>
+    <div class="toflex">
+        <button onclick="display(1)">1</button>
+        <button onclick="display(2)">2</button>
+        <button onclick="display(3)">3</button>
+        <button onclick="add()" class="add sym">+</button>
+        <button onclick="subtract()" class="sym sub">-</button>
+    </div>
+    <div class="toflex">
+        <button onclick="display(0)">0</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="loge()" id="loge">log<sub>e</sub></button>
+        <button onclick="log()" class="sym">log<sub class="sym">10</sub></button>
+        <button onclick="sqrt()" class="sym">sqrt</button>
+        
+    </div>
+    <button onclick="perform()" id="equal">=</button>
+    </main>
+</body>
+</html>

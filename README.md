@@ -1,2 +1,4 @@
 # Calculator-2.0
-An upgraded version of the previous calculator using javascript
+A simple calculator to compute calculations needed in daily life.
+
+Done using javascript
